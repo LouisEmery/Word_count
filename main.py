@@ -7,11 +7,12 @@ phrase = input(str("votre phrase: "))
 #definir la fonction
 def count_word(phrase):
     #strip la phrase pour enlever les espaces inutiles
-    phrase2 = phrase.strip(" ")
+    stripped_phrase = phrase.strip(" ")
     #split la phrae pour connaitre le nombre de mots
-    phrase3 = phrase2.split(" ")
+    nombre_de_mots = stripped_phrase.split(" ")
     #amene le nombre de mots pour lutiliser en dehors de la phrase
-    return(len(phrase3))
+    nbr = (len(nombre_de_mots))
+    return nbr
 #definir la variable ndm en etant le nombre de mots definit dans la fonction
 ndm = count_word(phrase)
 
